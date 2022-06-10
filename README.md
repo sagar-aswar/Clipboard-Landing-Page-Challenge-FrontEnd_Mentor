@@ -4,7 +4,7 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](ScreenShot.png)
 
 ### Links
 
