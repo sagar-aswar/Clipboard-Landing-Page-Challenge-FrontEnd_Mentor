@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+* {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Background Header Image  */
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bg-image img {
+    width: 100vw;
+}
+
+
+/* Button Styling */
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-weight: 600;
+    margin: 0 7.5px;
+}
+
+a:hover {
+    opacity: 0.9;
+}
+
+.btn-1 {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0 1px 10px hsl(171, 27%, 71%);
+}
+
+.btn-2 {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0 1px 10px hsl(232, 34%, 83%);
+}
+
+
+/* Headings & Paragraph Styling */
+
+p {
+    color: hsl(201, 11%, 66%);
+    font-size: 16.5px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: hsl(210, 10%, 33%);
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h5 {
+    color: hsl(201, 11%, 66%);
+}
+
+
+/* Section Styling */
+
+
+/* Hero Section */
+
+.logo-image-main {
+    text-align: center;
+    margin: 100px auto 55px auto;
+}
+
+.hero-textarea {
+    width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-textarea h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero-textarea p {
+    margin: 0px 70px;
+}
+
+
+/* Button Section */
+
+.button-section {
+    text-align: center;
+    margin: 55px 0;
+}
+
+
+/* Info Section Styling */
+
+.info-section {
+    text-align: center;
+    margin: 0 auto;
+    padding: 75px 0;
+}
+
+.info-section p {
+    margin: 0 430px;
+}
+
+
+/* Mac Article Styling */
+
+.mac-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.left {
+    margin: 0 0 0 -35px;
+}
+
+.right {
+    margin: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;
+    align-self: center;
+}
+
+.right h3 {
+    margin: 0;
+}
+
+.right h5 {
+    margin: 7.5px 240px 7.5px 0;
+    font-weight: 400;
+}
+
+.list-item {
+    margin: 25px 0;
+}
+
+
+/* Tab Article Styling */
+
+.tab-article {
+    text-align: center;
+}
+
+
+/* Info carousel Styling */
+
+.info-carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.card {
+    width: 300px;
+    text-align: center;
+    margin: 15px 35px;
+}
+
+
+/* Testimonials Section Styling */
+
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.testimonials img {
+    margin: 10px 50px;
+}
+
+#this {
+    padding: 30px 0;
+}
+
+
+/* Footer Styling */
+
+footer {
+    background-color: hsl(204, 24%, 96%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-image-small {
+    margin: 0 0 0 75px;
+}
+
+.logo-image-small img {
+    width: 50px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 10px 350px 10px 175px;
+}
+
+footer ul li {
+    margin: 15px;
+    color: hsl(210, 10%, 33%);
+}
+
+footer ul li:hover {
+    color: hsl(171, 66%, 44%);
+    cursor: pointer;
+}
+
+.socials img {
+    margin: 10px;
+}
+
+#mobile {
+    display: none;
+}
+
+
+/* Media Queries */
+
+
+/* For Smaller Laptops */
+
+@media (min-width:780px) and (max-width:1435px) {
+    #desktop {
+        display: block;
+    }
+    #mobile {
+        display: none;
+    }
+    .mac-article {
+        flex-direction: column;
+    }
+    .left {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .left img {
+        width: 90%;
+        margin: 20px 0;
+    }
+    .right {
+        margin: 10px 45px;
+        text-align: center;
+        height: auto;
+    }
+    .list-item {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .list-item h5 {
+        margin: 0;
+    }
+    .info-section {
+        padding: 0 20px;
+    }
+    .info-section p {
+        margin: 30px 20px;
+    }
+    .tab-article img {
+        width: 90%;
+        margin: 20px 0;
+    }
+    .testimonials img {
+        padding: 20px;
+    }
+    #this {
+        padding: 30px auto;
+        margin: 0 24px;
+    }
+}
+
+
+/* For Tablets/iPads */
+
+@media (min-width:430px) and (max-width:780px) {
+    #desktop {
+        display: block;
+    }
+    #mobile {
+        display: none;
+    }
+    .hero-textarea {
+        width: 90%;
+    }
+    .hero-textarea h1 {
+        font-size: 50px;
+    }
+    .hero-textarea p {
+        margin: 0 50px;
+    }
+    p {
+        font-size: 20px;
+    }
+    a {
+        display: block;
+        margin: 20px;
+    }
+    .mac-article {
+        flex-direction: column;
+    }
+    .left {
+        margin: 0;
+        text-align: center;
+    }
+    .left img {
+        width: 90%;
+        margin: 20px 0;
+    }
+    .right {
+        margin: 10px 45px;
+        text-align: center;
+        height: auto;
+    }
+    .list-item {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .list-item h5 {
+        margin: 0;
+    }
+    .info-section {
+        padding: 0 20px;
+    }
+    .info-section p {
+        margin: 30px 20px;
+    }
+    .tab-article img {
+        width: 90%;
+        margin: 20px 0;
+    }
+    .info-carousel {
+        flex-direction: column;
+    }
+    .testimonials {
+        flex-direction: column;
+    }
+    .testimonials img {
+        margin: 50px auto;
+        width: 50%;
+    }
+    #this {
+        padding: 30px auto;
+        margin: 0 24px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .logo-image-small {
+        margin: 0;
+    }
+    footer ul {
+        margin: 0;
+        display: block;
+        text-align: center;
+    }
+}
+
+
+/* for Mobile Phones */
+
+@media (max-width:430px) {
+    #desktop {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+    .hero-textarea {
+        width: 90%;
+    }
+    .hero-textarea h1 {
+        font-size: 30px;
+    }
+    .hero-textarea p {
+        margin: 0 5px;
+    }
+    p {
+        font-size: 15px;
+    }
+    a {
+        display: block;
+        margin: 20px;
+    }
+    .mac-article {
+        flex-direction: column;
+    }
+    .left {
+        margin: 0;
+        text-align: center;
+    }
+    .left img {
+        width: 90%;
+        margin: 20px 0;
+    }
+    .right {
+        margin: 10px 45px;
+        text-align: center;
+        height: auto;
+    }
+    .list-item {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .list-item h5 {
+        margin: 0;
+    }
+    .info-section {
+        padding: 0 20px;
+    }
+    .info-section p {
+        margin: 30px 20px;
+    }
+    .tab-article img {
+        width: 90%;
+        margin: 20px 0;
+    }
+    .info-carousel {
+        flex-direction: column;
+    }
+    .testimonials {
+        flex-direction: column;
+    }
+    .testimonials img {
+        margin: 50px;
+    }
+    #this {
+        padding: 30px 0;
+        margin: 0 24px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .logo-image-small {
+        margin: 0;
+    }
+    footer ul {
+        margin: 0;
+        display: block;
+        text-align: center;
+    }
+}
